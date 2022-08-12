@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<div class="login"></div>
+<div class="login-form">
+    <h1>Bem vindo de volta!</h1>
+    <input type="email" [(ngModel)]="email" value="" placeholder="Digite seu email" id="username" required />
+    <input type="password" [(ngModel)]="password" value="" placeholder="Digite sua senha" id="password" required />
+    <p *ngIf="error" >Usuário ou senha inválidos.</p>
+    <button (click)="authenticate()" class="button" type="submit">Entrar</button>
+</div>
+<app-footer></app-footer>

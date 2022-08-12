@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="title">
+    <h1>Pizzas</h1>
+    <h2>Pizzas tipicamente italianas!</h2>
+    <span>Pizzas disponiveis: {{pizzaQuantity}}</span>
+</div>
+<div class="container1">    
+    <ng-container>
+        <div *ngFor="let pizza of pizzas" class="content">     
+            <ng-content></ng-content>                               
+                <img [src]="pizza.imageUrl" alt=""  class="image">                                 
+                <h1>{{pizza.name}}</h1 >              
+                <span class="description">{{pizza.description}}</span>                           
+                <span>{{pizza.price | currency: 'R$'}}</span>
+                <button (click)="buyButton()" (click)="buyPizza(pizza.id)" *ngIf="!error" >Comprar</button>                
+                <p *ngIf="error">Faça o <strong (click)="navigateByUrl('login')">Login</strong> para poder comprar!</p>
+                       
+        </div>
+    </ng-container>
+</div>
+
+<app-home>
+    <div class="container2">
+        <div>
+            <h4>Entre em contato conosco e venha comer<br>a nossa deliciosa pizza!</h4>
+        </div>
+        <div class="line"> 
+            <img src="https://img.icons8.com/officel/480/horizontal-line.png" alt="">
+        </div>
+        <div class="logo">
+            <img src="assets/logo-sem-fundo.png" alt="">
+        </div>
+        <div class="line">
+            <img src="https://img.icons8.com/officel/480/horizontal-line.png" alt="">
+        </div>
+        <div>
+            <h4>Não trabalhamos com reservas!</h4>
+        </div>
+    </div>
+</app-home>
+

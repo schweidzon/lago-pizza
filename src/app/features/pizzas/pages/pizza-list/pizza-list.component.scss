@@ -1,0 +1,115 @@
+.container1 {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns:  repeat(auto-fill, minmax(390px, 1fr));      
+    text-align: left;    
+    margin: auto;
+    width: 90%;    
+    margin-right: 6.5rem;
+    margin-bottom: 200px;
+    
+}
+
+
+.title h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: 'Questrial', sans-serif;
+    margin-bottom: 15px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.title span {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    display: block;
+}
+
+
+.image {
+    width: 32rem;
+    border-radius: 5px;    
+    
+}
+
+.container1 span{
+    display: block;
+    max-width: 35rem;
+    left: 0;
+    float: left;
+    width: 100%;
+}
+
+
+
+p {
+    color: red;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+
+strong:hover {
+    cursor: pointer;
+    
+}
+
+button {
+    padding: 5px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-family: 'Questrial', sans-serif;
+    border-radius: 5px;
+    border: 1px solid black;
+    letter-spacing: 1px;  
+    background-color: white;  
+    float: left;
+   
+    
+}
+
+button:hover {
+    position: relative;       
+    cursor: pointer;    
+  
+}
+
+button:active {
+    top: 1px;    
+    font-size: 0.8rem;
+}
+
+.container2 {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;   
+    margin-bottom: 10rem;
+    align-items: center;
+    font-style: italic;
+    font-weight: 400;    
+}
+
+
+.container2 .logo img {
+    width:20rem;
+}
+
+.container2 .line img {
+    width: 10rem;
+    
+}
+
+

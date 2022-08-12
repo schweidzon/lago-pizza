@@ -1,0 +1,25 @@
+<header>
+    <div class="container">
+        <img src="assets/logo-sem-fundo.png" alt="logo" class="logo" (click)="navigateByUrl('home')">
+
+        <nav>
+            <ul>
+                <li class="home">
+                    <a (click)="navigateByUrl('home')" >Home</a>
+                    <a  (click)="navigateByUrl('pizza-list')" >Pizzas</a>
+                    <a  (click)="navigateByUrl('pizza-register')" *ngIf="management" > Cadastrar pizza</a>
+                    <a (click)="navigateByUrl('login')" *ngIf="!user" >Login</a>
+                    <a (click)="navigateByUrl('signup')" *ngIf="!user" >Cadastro</a>
+                </li>
+                <li class="menu-conteiner">
+                    <a  >{{whichUser()}}</a>
+                    <div class="menu">
+                        <a *ngIf="user && !management" >Profile</a>
+                        <a *ngIf="user && !management" >Orders</a>
+                        <a *ngIf="user"  (click)="clearSessionStorage()" >Logout</a>
+                    </div>
+                </li>            
+            </ul>            
+        </nav>
+    </div>
+</header>

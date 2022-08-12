@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div class="container">
+    <div *ngIf = "pizza" >
+        <div class="container1">          
+            <div>                       
+              <img [src]="pizza.imageUrl" alt=""  class="image">                                 
+              <h1>{{pizza.name}}</h1 >              
+              <span>{{pizza.description}}</span>                          
+              <span>{{pizza.price | currency:'R$'}}</span>          
+            </div>
+        </div>
+    </div>    
+    <div class="login-form">
+        <h1>Boa escolha!</h1>        
+        <input type="number"  value="" placeholder="Quantidade" id="quantity" required />
+        <p>Produtos disponíveis em: {{date | date}}</p>
+        <button class="button" type="submit">Adicionar ao carrinho</button>
+        <button class="button" (click)="navigateByUrl('pizza-list')">Voltar</button>
+    </div>
+</div>
+<app-footer></app-footer>
+

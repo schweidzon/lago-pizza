@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<form [formGroup]="productForm">
+    <div class="login-form">
+        <h1>Coloque os dados para cadastrar novas pizzas</h1>
+        <input type="text" formControlName="name" value="" placeholder="Digite o nome da pizza" id="name" required />
+        <input type="text" formControlName="description" value="" placeholder="Digite a descrição da pizza" id="description" required />    
+        <input type="number" formControlName="price" value="" placeholder="Digite o preço da pizza" id="price" required />
+        <span *ngIf="productForm.controls.price.errors && productForm.controls.price.errors.min && productForm.value.price! > '0'">O valor da pizza deve ser no minimo R$ 45,00</span>
+        <input type="text" formControlName="imageUrl" value="" placeholder="Digite a URL da pizza" id="url" required />        
+        <button class="button" (click)="onSubmit()" type="submit" [disabled]="productForm.invalid">Registrar pizza</button>        
+    </div>
+</form>
+<app-footer></app-footer>
