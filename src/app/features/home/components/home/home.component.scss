@@ -25,6 +25,10 @@
     
 }
 
+.text .span {
+
+}
+
 .text span:hover {
     text-decoration: underline 2px;
     text-underline-offset: 15px;
@@ -51,8 +55,10 @@
 
 
   @media only screen and (max-width: 920px) {
-    .text {     
+    .text .span {     
         font-size: 3rem;
+        margin: auto;
+        align-items: center;
     }
   }
 
