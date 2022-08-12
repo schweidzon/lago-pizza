@@ -34,7 +34,7 @@
 
 .span {
     margin: auto;
-    min-width: 300px;
+    width: 20%;
 }
 
 
@@ -49,9 +49,10 @@
     }
   }
 
-  @media only screen and (max-width: 800px) {
-    .test {     
-        margin-top: 40%;
+
+  @media only screen and (max-width: 920px) {
+    .text {     
+        font-size: 3rem;
     }
   }
 
