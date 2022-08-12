@@ -50,6 +50,13 @@ a:hover {
     margin-right: 10rem;    
 }
 
+@media only screen and (max-width: 800px) {
+    .container .logo {     
+        width: 30%;
+        margin-left: 20px;
+    }
+  }
+
 .logo:hover {
     cursor: pointer;
 }

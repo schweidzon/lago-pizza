@@ -38,10 +38,17 @@
 
 
 .image {
-    width: 32rem;
+    max-width: 32rem;
     border-radius: 5px;    
     
 }
+
+@media only screen and (max-width: 800px) {
+    .image {     
+        width: 20rem;
+       
+    }
+  }
 
 .container1 span{
     display: block;
@@ -50,6 +57,12 @@
     float: left;
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .content {     
+        margin-left: 10%;   
+    }
+  }
 
 
 
