@@ -40,8 +40,12 @@
 
 
 @media only screen and (max-width: 1200px) {
-    .test {     
-        margin-top: 20%;
+    .container {     
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y:center;
+        background-position-x:center;
+        
     }
   }
 
