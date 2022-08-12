@@ -28,10 +28,10 @@ export class HeaderComponent implements OnInit {
   openClose() {
     if (this.isOpen === false){
       this.isOpen = true
-      console.log(this.isOpen)
+      
     } else  {
       this.isOpen = false
-      console.log(this.isOpen)
+      
     }
   }
   
