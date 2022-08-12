@@ -64,6 +64,12 @@
     }
   }
 
+  @media only screen and (max-width: 800px) {
+    .container2 h4,.container2 .line {     
+        display: none;
+    }
+  }
+
 
 
 p {
