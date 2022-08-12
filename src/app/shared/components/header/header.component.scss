@@ -9,8 +9,8 @@ header {
     width: 100%;        
 }
 
-@media only screen and (max-width: 900px) {
-    .container nav {
+@media only screen and (max-width: 920px) {
+    .container .home, .menu-conteiner {
       display: none;
     }
   }
@@ -36,6 +36,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     width: 95%;
+    
    
 }
 
@@ -85,8 +86,6 @@ a span {
     position: relative;    
 }
 
-
-
 .menu {
     position: absolute;
     z-index: 1;
@@ -103,6 +102,44 @@ a span {
    text-align: center;
    width: 100%;
 }
+
+.menu-mobile {
+    position: relative;    
+    display: none;
+   
+}
+
+
+
+.mobile {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    display: none;
+    margin-left: -20px;
+}
+
+
+.menu-mobile:hover .mobile {
+    display: block;
+}
+
+.mobile a {
+   text-align: center;
+   width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+    .menu-mobile {     
+       display: block;
+       margin-right: 20px;
+    }
+  }
+
+
+
+
+  
 
 
 

@@ -18,8 +18,21 @@
                         <a *ngIf="user && !management" >Orders</a>
                         <a *ngIf="user"  (click)="clearSessionStorage()" >Logout</a>
                     </div>
-                </li>            
-            </ul>            
+                </li>     
+                <li class="menu-mobile">
+                    <a><img src="assets/menu.png" width="65px"></a>
+                    <div class="mobile">
+                     <a (click)="navigateByUrl('home')" >Home</a>
+                     <a  (click)="navigateByUrl('pizza-list')" >Pizzas</a>
+                    <a  (click)="navigateByUrl('pizza-register')" *ngIf="management" > Cadastrar pizza</a>
+                    <a (click)="navigateByUrl('login')" *ngIf="!user" >Login</a>
+                    <a (click)="navigateByUrl('signup')" *ngIf="!user" >Cadastro</a>
+                    <a *ngIf="user"  (click)="clearSessionStorage()" >Logout</a>
+                    </div>
+                </li>    
+                     
+            </ul> 
+                       
         </nav>
     </div>
 </header>
