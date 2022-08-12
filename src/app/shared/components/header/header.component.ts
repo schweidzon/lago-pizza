@@ -21,9 +21,19 @@ export class HeaderComponent implements OnInit {
       }
     }
   }
-
+  isOpen:boolean = false
   user?: User
   management = false
+
+  openClose() {
+    if (this.isOpen === false){
+      this.isOpen = true
+      console.log(this.isOpen)
+    } else  {
+      this.isOpen = false
+      console.log(this.isOpen)
+    }
+  }
   
 
 

@@ -20,8 +20,8 @@
                     </div>
                 </li>     
                 <li class="menu-mobile">
-                    <a><img src="https://icon-library.com/images/icon-menu-png/icon-menu-png-24.jpg" width="90px"></a>
-                    <div class="mobile">
+                    <a><img src="https://icon-library.com/images/icon-menu-png/icon-menu-png-24.jpg" width="90px" (click)="openClose()"></a>
+                    <div class="mobile" *ngIf="isOpen">
                      <a (click)="navigateByUrl('home')" >Home</a>
                      <a  (click)="navigateByUrl('pizza-list')" >Pizzas</a>
                     <a  (click)="navigateByUrl('pizza-register')" *ngIf="management" > Cadastrar pizza</a>
