@@ -123,10 +123,14 @@ a span {
     
 }
 
-
 .menu-mobile:hover .mobile {
     display: block;
 }
+
+.menu-mobile:active .mobile {
+    display: none;
+}
+
 
 .mobile a {
    text-align: center;
